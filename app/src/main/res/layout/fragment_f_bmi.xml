@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.fBmi">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halaman BMI"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berat Badan"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/edt_bb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Berat Badan (Kg)"
+                    android:textSize="20sp"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tinggi Badan"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/edt_tb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tinggi Badan (cm)"
+                    android:textSize="20sp"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_clrbmi"
+                    style = "@style/RoundedButton"
+                    android:layout_width="140dp"
+                    android:text="Clear " />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_calcbmi"
+                    style = "@style/RoundedButton"
+                    android:layout_width="140dp"
+                    android:text="Calculate BMI" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:id="@+id/txt_hasilbmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:hint="BMI dan Kategori"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_grafik"
+                style = "@style/RoundedButton"
+                android:layout_width="300dp"
+                android:text="LIHAT GRAFIK BMI ANDA"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

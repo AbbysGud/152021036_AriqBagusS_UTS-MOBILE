@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.fMoney">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halaman Konversi"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Uang"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/edt_bil1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input jumlah uang"
+                    android:textSize="20sp"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Spinner
+                    android:id="@+id/spn1"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:entries="@array/operatorKonversi1"/>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_arrow_right"/>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <Spinner
+                    android:id="@+id/spn2"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:entries="@array/operatorKonversi2"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_clrconvert"
+                    style = "@style/RoundedButton"
+                    android:layout_width="140dp"
+                    android:text="Clear " />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_convertion"
+                    style = "@style/RoundedButton"
+                    android:layout_width="140dp"
+                    android:text="Konversi"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil"
+                    android:textStyle="bold"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:id="@+id/txt_hasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:hint="Hasil Konversi"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

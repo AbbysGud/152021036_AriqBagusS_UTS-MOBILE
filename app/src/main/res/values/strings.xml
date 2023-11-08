@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Itenas</string>
+    <string name="itenas">My Itenas App</string>
+    <string name="version">V 1.0.0</string>
+    <string name="hint">Hint</string>
+    <string name="nama">Username</string>
+    <string name="login">Login</string>
+    <string name="Register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="button">Register</string>
+    <string name="header_registrasi">Create Account</string>
+    <string name="itenas1">Intitut Teknologi Nasional</string>
+    <string name="sejarah">
+        Institut Teknologi Nasional (Itenas) Bandung merupakan perguruan tinggi yang terletak di
+        Jl. PH.H. Mustopa No. 23 – Bandung. Area yang mudah dijangkau dari berbagai arah Kota
+        Bandung menjadikan lokasi Kampus Itenas cukup strategis. Dikelilingi oleh berbagai pusat
+        perbelanjaan, pusat kuliner, percetakan, dan juga perumahan, Itenas menjadi salah satu
+        kampus yang sangat hidup dan menyenangkan.
+        \n\nLihat Fakultas apa saja yang ada di ITENAS:
+    </string>
+    <string name="infor">
+        Program Studi Informatika berkonsentrasi dalam menghasilkan sarjana yang menguasai penggunaan
+        piranti lunak (software) yang diarahkan melalui kompetensi Basis Data (Database), Jaringan Komputer (Computer
+        Network), dan Kecerdasan Buatan (Artificial Intelegence) termasuk penguasaan multimedia.
+
+        Lapangan pekerjaan dunia Informatika adalah Administrasi Basis Data, Analisis Basis Data, Sistem Analis, Bisnis
+        Analis, Manager Proyek, Programmer dan Web Developer.
+    </string>
+    <string name="ftsp">
+        Demi mendukung pembangunan yang berasazkan nilai kebaruan, keberlanjutan dan pemeliharaan
+        lingkungan, maka setiap perencanaan dalam lingkup apapun mesti melalui riset yang mendalam
+        dan terfokus. Perencanaan dan sipil merupakan tatanan yang penting dalam kehidupan
+        bermasyarakan dan pembangunan bangsa. Keilmuan yang terpusat pada hidup manusia dan sistem
+        pembangunan dan efektif, efisien serta bernilai estetis menjadi hal yang penting karena
+        merupakan indikator kemajuan bangsa. Jurusan-jurusan yang ada di bawah naungan Fakultas
+        Teknik Sipil dan Perencanaan ini adalah jurusan yang terdepan dalam hubungan antara manusia,
+        bumi yang dipijaknya, serta masyarakat dan negara.
+    </string>
+    <string name="fad">
+        Menjadikan Fakultas Arsitektur dan Desain (FAD) Itenas sebagai unit pelaksana akademik yang
+        handal, yang mampu mengkoordinasikan, melaksanakan dan memberikan pelayanan kepada jurusan
+        di lingkungan FAD dalam melaksanakan Tri Dharma Perguruan Tinggi, sehingga menghasilkan
+        lulusan calon arsitektur, desainer interior, desainer produk dan desainer komunikasi visual
+        yang memiliki watak inovatif dan berwawasan kewirausahaan, serta mampu aktif berperan serta
+        dalam upaya penguatan daya saing nasional, pengembangan budaya nasional dan perkembangan
+        teknologi.
+    </string>
+    <string name="fakul">Fakultas Teknologi Industri merupakan Fakultas yang di desain untuk
+        mempersiapkan semua aspek yang dibutuhkan oleh dunia industri. Wawasan mengenai awal mula
+        perindustrian hingga perkembangan teknologinya yang kini menjadi Industri 4.0 wajib dipahami
+        sebelum merancang dan mencipta inovasi baru.</string>
+    <string name="informatika">Informatika</string>
+    <string-array name="operatorHitung">
+        <item>Tambah</item>
+        <item>Kurang</item>
+        <item>Bagi</item>
+        <item>Kali</item>
+    </string-array>
+    <string-array name="operatorKonversi1">
+        <item>RP</item>
+        <item>Dollar</item>
+        <item>Euro</item>
+        <item>Yen</item>
+    </string-array>
+    <string-array name="operatorKonversi2">
+        <item>RP</item>
+        <item>Dollar</item>
+        <item>Euro</item>
+        <item>Yen</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

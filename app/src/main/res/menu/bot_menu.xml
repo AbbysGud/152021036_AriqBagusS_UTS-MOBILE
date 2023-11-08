@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bot_menu_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/bot_menu_calculator"
+        android:icon="@drawable/baseline_calculate_24"
+        android:title="Calculator"/>
+    <item
+        android:id="@+id/bot_menu_money"
+        android:icon="@drawable/baseline_attach_money_24"
+        android:title="Money"/>
+    <item
+        android:id="@+id/bot_menu_bmi"
+        android:icon="@drawable/baseline_scale"
+        android:title="BMI"/>
+    <item
+        android:id="@+id/bot_menu_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"/>
+
+</menu>

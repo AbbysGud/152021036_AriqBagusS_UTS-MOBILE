@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Grafik">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/menu">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:src="@drawable/baseline_arrow_back"
+            android:clickable="true"
+            android:focusable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Halaman Grafik"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@color/menu"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Faculty"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <androidx.cardview.widget.CardView
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            app:contentPadding="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+                <com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
+                    android:id="@+id/aa_chart_view"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:id="@+id/txt_inputbmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masukkan BMI Minggu 1 : "
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:layout_marginLeft="20dp"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <EditText
+                    android:id="@+id/edt_inputbmi"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:hint="Input BMI anda disini"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_inputbmi"
+                    android:layout_width="300dp"
+                    style = "@style/RoundedButton"
+                    android:layout_gravity="center"
+                    android:text="INPUT"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+</LinearLayout>
